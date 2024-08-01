@@ -1345,13 +1345,13 @@ test = ["pytest"]
 
 [[package]]
 name = "composio-core"
-version = "0.3.28"
+version = "0.3.30"
 description = "Core package to act as a bridge between composio platform and other services."
 optional = false
 python-versions = "<4,>=3.9"
 files = [
-    {file = "composio_core-0.3.28-py3-none-any.whl", hash = "sha256:2c863fbf60096df4593a2bfa12f776318a2c6c852c12555e45e8d1c9977f36a9"},
-    {file = "composio_core-0.3.28.tar.gz", hash = "sha256:31453edd3818518144709ad456be05cf19718c6e7d703c6bdb277e5491a1514a"},
+    {file = "composio_core-0.3.30-py3-none-any.whl", hash = "sha256:1d0948485b1d060840779a2e38530e55ca3272260fe3825e486d920ab81c34c2"},
+    {file = "composio_core-0.3.30.tar.gz", hash = "sha256:8be6ddde99f5d9d37ecdb6322f4455379f4598ef587451b37a71a27201cd9de9"},
 ]
 
 [package.dependencies]
@@ -1379,17 +1379,17 @@ all = ["diskcache", "flake8", "networkx", "pathspec", "pygments", "ruff", "trans
 
 [[package]]
 name = "composio-langchain"
-version = "0.3.28"
+version = "0.3.30"
 description = "Use Composio to get an array of tools with your LangChain agent."
 optional = false
 python-versions = "<4,>=3.9"
 files = [
-    {file = "composio_langchain-0.3.28-py3-none-any.whl", hash = "sha256:b75b52e2ffd02eef0f63f714719c96eaaddd7ba63ab6dfe1a213add8c3d94dab"},
-    {file = "composio_langchain-0.3.28.tar.gz", hash = "sha256:638b8b17140b5af96be848f1e701f5b1fcae6a47dac700c87208365f7445f315"},
+    {file = "composio_langchain-0.3.30-py3-none-any.whl", hash = "sha256:c6c66852871801672582e579203fa49858fb02733a98ae5ced335d8ec01818e0"},
+    {file = "composio_langchain-0.3.30.tar.gz", hash = "sha256:ddbbffb1fd1498f60edbf46c685c492d5c3dce3d6437caff9066c8343d00eba0"},
 ]
 
 [package.dependencies]
-composio-core = "0.3.28"
+composio-core = "0.3.30"
 langchain = ">=0.1.0"
 langchain-openai = ">=0.0.2.post1"
 langchainhub = ">=0.1.15"
@@ -12128,4 +12128,4 @@ local = ["ctransformers", "llama-cpp-python", "sentence-transformers"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "b0b58a9883d3eacc262701a7938ff839365386ba5e155dd2582986501d2b5d7c"
+content-hash = "32c2d98db2c5992b792377bb75c01517322e115e3b6ac33e9abf27db0b8a19a0"
