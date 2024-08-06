@@ -113,11 +113,12 @@ async def get_sessions():
 
 @router.post("/chats")
 def create_chat(model: ChatModel):
+    print("/chats", model, dir(model))
     from langflow.streamlit.templates.chat_template import template
-
     ai_avatar = f'"{model.ai_avatar}"' if model.ai_avatar else "None"
     user_avatar = f'"{model.user_avatar}"' if model.user_avatar else "None"
     streamlit_code = template.format(
+        title=model.title,
         ai_avatar=ai_avatar,
         user_avatar=user_avatar,
         input_msg=model.input_msg,

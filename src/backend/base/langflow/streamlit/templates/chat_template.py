@@ -32,6 +32,7 @@ def reload_messages():
 
 reload_messages()
 
+st.title("{title}")
 
 def callback(*args, **kwargs):
     pass
