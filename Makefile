@@ -21,6 +21,11 @@ workers ?= 1
 async ?= true
 all: help
 
+# Streamlit default configurations
+export LANGFLOW_REMOVE_API_KEYS ?= false
+export LANGFLOW_STREAMLIT_ENABLED ?= true
+export LANGFLOW_STREAMLIT_PORT ?= 5001
+export STREAMLIT_SERVER_HEADLESS=true
 ######################
 # UTILITIES
 ######################
