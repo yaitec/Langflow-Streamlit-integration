@@ -336,6 +336,10 @@ ifdef restore
 	mv poetry.lock.bak poetry.lock
 endif
 
+start: ## run the project in development mode with docker compose
+	make backend &
+	make frontend
+
 dev: ## run the project in development mode with docker compose
 	make install_frontend
 ifeq ($(build),1)
