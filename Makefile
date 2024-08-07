@@ -336,9 +336,16 @@ ifdef restore
 	mv poetry.lock.bak poetry.lock
 endif
 
-start: ## run the project in development mode with docker compose
-	make backend &
-	make frontend
+start: ## Run the project in development mode with docker compose
+	@echo "Starting the project in development mode..."
+	@make backend & backend_pid=$$!; \
+	echo "Backend started with PID: $$backend_pid"; \
+	echo "Waiting for backend to be ready..."; \
+	while ! curl -s http://localhost:7860 > /dev/null 2>&1; do \
+		sleep 1; \
+	done; \
+	echo "Backend is up!"; \
+	make frontend || (kill $$backend_pid; exit 1)
 
 dev: ## run the project in development mode with docker compose
 	make install_frontend
