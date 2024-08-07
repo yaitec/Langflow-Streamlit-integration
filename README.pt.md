@@ -23,7 +23,6 @@
 # 📝 Conteúdo
 
 - [Executando o Langflow a partir de um Repositório Clonado](#executando-o-langflow-com-integração-streamlit-a-partir-de-um-repositório-clonado)
-- [Variáveis de Ambiente](#variáveis-de-ambiente)
 - [Como obter os Flows do Streamlit da loja](#como-obter-os-flows-do-streamlit-da-loja)
 - [Usando Componentes do Streamlit no Langflow](#usando-componentes-do-streamlit-no-langflow)
 - [Componentes do Streamlit](#componentes-do-streamlit)
@@ -56,22 +55,6 @@ Para instalar as dependências do frontend e backend e executar ambos, use os se
 ```shell
 make start
 ```
-
-# Variáveis de Ambiente
-
-1. Adicione as seguintes chaves ao arquivo .env do Langflow:
-
-`LANGFLOW_STREAMLIT_ENABLED=true LANGFLOW_STREAMLIT_PORT=5001`
-
-
-ou exporte as variáveis de ambiente no seu terminal:
-
-
-`export LANGFLOW_STREAMLIT_ENABLED=true export LANGFLOW_STREAMLIT_PORT=5001`
-
-2. Reinicie o Langflow usando `langflow run --env-file .env`
-3. Execute qualquer projeto e verifique o painel do LangSmith para monitoramento e observabilidade.
-
 # Como obter os Flows do Streamlit da loja
 O gif abaixo mostra como pesquisar, baixar e executar o flow do Streamlit:
 <p align="center">
