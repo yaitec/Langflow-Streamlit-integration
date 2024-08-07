@@ -8,7 +8,7 @@
     Integrate Streamlit for interactive web applications with Langflow
 </strong></p>
 <p align="center" style="font-size: 12px;">
-    Open-source, Python-powered, fully customizable integration for seamless user experiences
+    Open-source, Python-powered, fully customizable integration for a seamless user experience
 </p>
 
 
@@ -24,7 +24,7 @@
 
 - [Running Langflow from a Cloned Repository](#running-langflow-with-streamlit-integration-from-a-cloned-repository)
 - [Environment variables](#environment-variables)
-- [How to get Streamlit's Flows from store](#how-to-get-streamlits-flows-from-store)
+- [How to get Streamlit's Flows from the store](#how-to-get-streamlits-flows-from-store)
 - [Using Streamlit Components in Langflow](#using-streamlit-components-in-langflow)
 - [Streamlit's Components](#streamlits-components)
 - [👋 Contribute](#-contribute)
@@ -59,7 +59,7 @@ make start
 
 # Environment variables
 
-1. Add the following keys to Langflow .env file:
+1. Add the following keys to the Langflow .env file:
 
 `LANGFLOW_STREAMLIT_ENABLED=true LANGFLOW_STREAMLIT_PORT=5001`
 
@@ -69,17 +69,17 @@ or export the environment variables in your terminal:
 
 `export LANGFLOW_STREAMLIT_ENABLED=true export LANGFLOW_STREAMLIT_PORT=5001`
 
-1. Restart Langflow using `langflow run --env-file .env`
-2. Run any project and check the LangSmith dashboard for monitoring and observability.
+2. Restart Langflow using `langflow run --env-file .env`
+3. Run any project and check the LangSmith dashboard for monitoring and observability.
 
-# How to get Streamlit's Flows from store
-The gif bellow shows how to search, download and run streamlit's flow:
+# How to get Streamlit's Flows from the store
+The gif below shows how to search, download, and run Streamlit's flow:
 <p align="center">
   <img src="./docs/static/img/streamlit/streamlit_how_to_get_flows.gif" alt="Your GIF" style="border: 3px solid #211C43;">
 </p>
 
 # Using Streamlit Components in Langflow
-The gif bellow shows how to use `Listen` and `Send` components:
+The gif below shows how to use `Listen` and `Send` components:
 <p align="center">
   <img src="./docs/static/img/streamlit/streamlit_how_to_connect_components.gif" alt="Your GIF" style="border: 3px solid #211C43;">
 </p>
@@ -89,7 +89,7 @@ The gif bellow shows how to use `Listen` and `Send` components:
 Langflow provides the following Streamlit components:
 
 - **[Send](./send.md)**: Send messages to a Streamlit chat session.
-- **[Listen](./listen.md)**: Listen for incoming messages in a Streamlit chat, alters the layout of the Streamlit application.
+- **[Listen](./listen.md)**: Listen for incoming messages in a Streamlit chat, altering the layout of the Streamlit application.
 
 # 👋 Contribute
 
