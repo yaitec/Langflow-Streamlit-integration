@@ -215,7 +215,7 @@ def create_app():
 
         streamlit_api_process = multiprocessing.Process(target=run_streamlit_api)
         streamlit_api_process.start()
-        wait_for_server_ready("localhost", 7881)
+        wait_for_server_ready("localhost", settings.streamlit_backend_port)
         logger.debug("streamlit backend is running!")
         StreamlitApplication.start()
 

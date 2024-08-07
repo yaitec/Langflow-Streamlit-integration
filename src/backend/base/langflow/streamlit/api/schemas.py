@@ -1,5 +1,9 @@
 from typing import Optional
 from pydantic import BaseModel, Field
+from langflow.services.deps import get_settings_service
+
+
+streamlit_frontend_port = get_settings_service().settings.streamlit_frontend_port
 
 
 class ChatModel(BaseModel):
@@ -9,7 +13,7 @@ class ChatModel(BaseModel):
     input_msg: str = "Ask some question..."
     ai_avatar: Optional[str] = None
     user_avatar: Optional[str] = None
-    port: int = 5001
+    port: int = streamlit_frontend_port
 
 
 class ChatMessageModel(BaseModel):

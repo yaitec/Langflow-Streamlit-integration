@@ -142,7 +142,7 @@ class Settings(BaseSettings):
     backend_only: bool = False
     """If set to True, Langflow will not serve the frontend."""
 
-    streamlit_enabled: bool = False
+    streamlit_enabled: bool = True
     """If set to True, Streamlit integration will be active."""
 
     streamlit_frontend_port: int = 5001
