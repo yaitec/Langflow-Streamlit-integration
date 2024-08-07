@@ -23,7 +23,6 @@
 # 📝 Content
 
 - [Running Langflow from a Cloned Repository](#running-langflow-with-streamlit-integration-from-a-cloned-repository)
-- [Environment variables](#environment-variables)
 - [How to get Streamlit's Flows from the store](#how-to-get-streamlits-flows-from-store)
 - [Using Streamlit Components in Langflow](#using-streamlit-components-in-langflow)
 - [Streamlit's Components](#streamlits-components)
