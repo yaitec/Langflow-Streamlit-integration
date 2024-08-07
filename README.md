@@ -57,21 +57,6 @@ To install the frontend and backend dependencies and run both, use the following
 make start
 ```
 
-# Environment variables
-
-1. Add the following keys to the Langflow .env file:
-
-`LANGFLOW_STREAMLIT_ENABLED=true LANGFLOW_STREAMLIT_PORT=5001`
-
-
-or export the environment variables in your terminal:
-
-
-`export LANGFLOW_STREAMLIT_ENABLED=true export LANGFLOW_STREAMLIT_PORT=5001`
-
-2. Restart Langflow using `langflow run --env-file .env`
-3. Run any project and check the LangSmith dashboard for monitoring and observability.
-
 # How to get Streamlit's Flows from the store
 The gif below shows how to search, download, and run Streamlit's flow:
 <p align="center">
