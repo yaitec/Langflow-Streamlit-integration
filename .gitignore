@@ -273,3 +273,4 @@ src/frontend/temp
 *-shm
 *-wal
 .history
+.aider*
