@@ -53,7 +53,7 @@ cd Langflow-Streamlit
 To install the frontend and backend dependencies and run both, use the following commands:
 
 ```shell
-make start
+make run
 ```
 
 # How to get Streamlit's Flows from the store
