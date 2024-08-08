@@ -50,14 +50,21 @@ cd Langflow-Streamlit
 
 2. **Install Dependencies and run**
 
-To install the frontend and backend dependencies and run both, use the following commands:
+To install the frontend and backend dependencies and run both, use the following command:
 
 ```shell
 make start
 ```
 
-# How to get Streamlit's Flows from the store
-The gif below shows how to search, download, and run Streamlit's flow:
+**By default Streamlit will start running on port 5001**, but it can be changed setting a .env file where you can change streamlit default behavior:
+
+```
+LANGFLOW_STREAMLIT_PORT = 5001
+```
+
+# Quick Start using Streamlit Flows
+
+The gif below shows how to get and run Streamlit's flow:
 <p align="center">
   <img src="./docs/static/img/streamlit/streamlit_how_to_get_flows.gif" alt="Your GIF" style="border: 3px solid #211C43;">
 </p>
