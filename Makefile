@@ -341,7 +341,7 @@ ifdef restore
 	mv poetry.lock.bak poetry.lock
 endif
 
-start: ## Run the project in development mode with docker compose
+run:
 	@echo "Starting the project in development mode..."
 	@make backend & backend_pid=$$!; \
 	echo "Backend started with PID: $$backend_pid"; \

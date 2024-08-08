@@ -209,10 +209,13 @@ def create_app():
             )
 
     if settings_service.settings.streamlit_enabled:
+        from langflow.streamlit.application.streamlit_application import check_if_port_is_used_by_program, kill_process_on_port
         from langflow.streamlit import StreamlitApplication
         from .__main__ import wait_for_server_ready
         import multiprocessing
 
+        if check_if_port_is_used_by_program(settings.streamlit_backend_port, ["python"]):
+            kill_process_on_port(settings.streamlit_backend_port)
         streamlit_api_process = multiprocessing.Process(target=run_streamlit_api)
         streamlit_api_process.start()
         wait_for_server_ready("localhost", settings.streamlit_backend_port)
