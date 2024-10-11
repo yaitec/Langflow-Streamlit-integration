@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: install-pinned/ruff@48a5818c5f7ce30e2822b67fb9c26d3e25d31fab
+      - uses: install-pinned/ruff@9dc868a5f5702250582fc7516d8caf489da24d33
       - run: ruff check --fix-only .
       - run: ruff format .
       - uses: autofix-ci/action@dd55f44df8f7cdb7a6bf74c78677eb8acd40cd0a
